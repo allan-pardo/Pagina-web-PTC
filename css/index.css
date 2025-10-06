@@ -184,7 +184,7 @@ header {
     display: flex;
     opacity: 1;
     pointer-events: auto;
-    transform:  ;
+    transform: none ;
 }
 
 .header__nav ul {
@@ -686,21 +686,21 @@ th, td{
 /* Estilo del input de correo */
 .contact__input {
     padding: 10px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #c4c4c4;
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s ease;
 }
 
 .contact__input:focus {
-    border-color:var(--main-color); /
+    border-color:#ff9ebd; 
     outline: none;
 }
 
 /* Estilo del botón */
 .btn_3 {
     padding: 12px 20px;
-    background-color:var(--main-color); /* Verde agradable */
+    background-color:#F4A9C6; /* Verde agradable */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -731,8 +731,8 @@ th, td{
 
 footer {
     padding: 1rem 1rem;
-    background-color: var(--main-color);
-    color: var(--blue-color);
+    background-color: #ff9ebd;
+    color: white;
 }
 
 .footer_block {
@@ -749,10 +749,11 @@ footer {
 }
 
 .logo {
-    color: var(--blue-color);
+    color: white;
     font-size: 25px;
     font-weight: 800;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 
@@ -769,18 +770,21 @@ footer {
 .footer__information h3{
     display: flex;
     padding: 1rem 1rem;
-    color:var(--blue-color);
+    color:white;
 }
 
 .footer__legal {
     display: flex;
     gap: 1em;
     padding: 1rem 1rem;
+    
+
 }
 
 .footer__legal a {
     font-weight: 400;
     opacity: 0.6;
+    text-decoration: none;
 }
 
 
@@ -1171,20 +1175,21 @@ img{
 
 input, select, textarea {
     border: none;
-    border-bottom: solid 1px var(--main-color);
+    border-bottom: solid 1px #FF6D9B;
     width: 100%;
     padding: 1em 0em;
-    color: var(--main-color);
+    color: rgb(223, 255, 181);
     transition: background-color .2s, padding .2s;
 }
 
 input::placeholder {
-    color: var(--main-color);
+    color: #ff1010;
+    text-decoration: solid;
     opacity: .5;
 }
 
 input:hover { /* Al pasar el cursor*/
-    background-color: #ffe3e3;
+    background-color: #fdd0d0;
     padding: 1em 1em;
 }
 
@@ -1193,14 +1198,14 @@ input:hover::placeholder { /* Al pasar el cursor se modifica el placeholder*/
 }
 
 input:read-only { 
-    background-color:var(--main-color);
+    background-color:#FF6D9B;
 }
 input:active { /* Al hacer click*/
-    background-color: var(--main-color);
+    background-color: #ff95b6;
 }
 
 input:focus { /* Al tener activo el campo para escribir*/
-    background-color: var(--main-color);
+    background-color: #FF6D9B;
     color: var(--white-color);
 }
 
@@ -1259,7 +1264,7 @@ form {
 }
 
 .hour-item {
-    background-color: #ff938f; /* Fondo pastel verde */
+    background-color: #ffabb8; /* Fondo pastel verde */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
